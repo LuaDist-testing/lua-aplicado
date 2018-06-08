@@ -1,5 +1,7 @@
 --------------------------------------------------------------------------------
--- rockspec/generate.lua: lua-aplicado dumb rockspec generator
+-- generate.lua: lua-aplicado dumb rockspec generator
+-- This file is a part of Lua-Aplicado library
+-- Copyright (c) Lua-Aplicado authors (see file `COPYRIGHT` for the license)
 --------------------------------------------------------------------------------
 
 pcall(require, 'luarocks.require') -- Ignoring errors
@@ -48,11 +50,15 @@ description = {
    license = "MIT/X11"
 }
 dependencies = {
-   "lua >= 5.1",
-   "lua-nucleo >= 0.0.1",
+   "lua == 5.1",
+   "lua-nucleo >= 0.1.0",
    "luafilesystem >= 1.5.0",
    "lbci >= 20090306",
-   "luasocket >= 2.0.2"
+   "luasocket >= 2.0.2",
+   "luasec >= 0.4",
+   "luaposix >= 5.1.23",
+   "lpeg",
+   "md5"
 }
 build = {
    type = "none",

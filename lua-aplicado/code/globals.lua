@@ -1,9 +1,17 @@
 --------------------------------------------------------------------------------
--- module.lua: lua-aplicado module bootstrapper
+-- globals.lua: list of globals defined in lua-aplicado
 -- This file is a part of Lua-Aplicado library
 -- Copyright (c) Lua-Aplicado authors (see file `COPYRIGHT` for the license)
 --------------------------------------------------------------------------------
 
-require 'lua-nucleo.module'
+local GLOBALS =
+{
+  -- No globals
+}
 
--- You may also want to require 'lua-nucleo.strict'.
+--------------------------------------------------------------------------------
+
+return
+{
+  GLOBALS = GLOBALS;
+}

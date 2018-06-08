@@ -1,8 +1,8 @@
 package = "lua-aplicado"
-version = "scm-1"
+version = "0.0.5-1"
 source = {
    url = "git://github.com/lua-aplicado/lua-aplicado.git",
-   branch = "master"
+   branch = "v0.0.5"
 }
 description = {
    summary = "A random collection of application level Lua libraries",
@@ -10,7 +10,7 @@ description = {
    license = "MIT/X11"
 }
 dependencies = {
-   "lua == 5.1",
+   "lua >= 5.1",
    "lua-nucleo >= 0.1.0",
    "luafilesystem >= 1.5.0",
    "lbci >= 20090306",
@@ -43,7 +43,6 @@ build = {
          ["lua-aplicado.log"] = "lua-aplicado/log.lua";
          ["lua-aplicado.luajit2"] = "lua-aplicado/luajit2.lua";
          ["lua-aplicado.module"] = "lua-aplicado/module.lua";
-         ["lua-aplicado.process"] = "lua-aplicado/process.lua";
          ["lua-aplicado.random"] = "lua-aplicado/random.lua";
          ["lua-aplicado.shell"] = "lua-aplicado/shell.lua";
          ["lua-aplicado.shell.filesystem"] = "lua-aplicado/shell/filesystem.lua";
@@ -52,9 +51,6 @@ build = {
          ["lua-aplicado.shell.remote"] = "lua-aplicado/shell/remote.lua";
          ["lua-aplicado.shell.remote_luarocks"] = "lua-aplicado/shell/remote_luarocks.lua";
          ["lua-aplicado.shell.send_email"] = "lua-aplicado/shell/send_email.lua";
-         ["lua-aplicado.srv.base_conn"] = "lua-aplicado/srv/base_conn.lua";
-         ["lua-aplicado.srv.copas_conn"] = "lua-aplicado/srv/copas_conn.lua";
-         ["lua-aplicado.srv.raw_conn"] = "lua-aplicado/srv/raw_conn.lua";
          ["lua-aplicado.testing.decorators"] = "lua-aplicado/testing/decorators.lua";
          ["lua-aplicado.web.cookie_jar"] = "lua-aplicado/web/cookie_jar.lua";
       }
