@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lua-aplicado"
-version = "0.0.2-1"
+version = "0.0.5-1"
 -- LuaDist source
 source = {
-  tag = "0.0.2-1",
+  tag = "0.0.5-1",
   url = "git://github.com/LuaDist-testing/lua-aplicado.git"
 }
 -- Original source
 -- source = {
 --    url = "git://github.com/lua-aplicado/lua-aplicado.git",
---    branch = "master"
+--    branch = "v0.0.5"
 -- }
 description = {
    summary = "A random collection of application level Lua libraries",
@@ -19,11 +19,12 @@ description = {
 }
 dependencies = {
    "lua >= 5.1",
-   "lua-nucleo >= 0.0.1",
+   "lua-nucleo >= 0.1.0",
    "luafilesystem >= 1.5.0",
    "lbci >= 20090306",
    "luasocket >= 2.0.2",
-   "luaposix >= 5.1.15-1",
+   "luasec >= 0.4",
+   "luaposix >= 5.1.23",
    "lpeg",
    "md5"
 }
@@ -36,10 +37,18 @@ build = {
          ["lua-aplicado.code.exports"] = "lua-aplicado/code/exports.lua";
          ["lua-aplicado.code.globals"] = "lua-aplicado/code/globals.lua";
          ["lua-aplicado.code.profile"] = "lua-aplicado/code/profile.lua";
+         ["lua-aplicado.common_logging"] = "lua-aplicado/common_logging.lua";
          ["lua-aplicado.csv"] = "lua-aplicado/csv.lua";
+         ["lua-aplicado.dsl.config_dsl"] = "lua-aplicado/dsl/config_dsl.lua";
+         ["lua-aplicado.dsl.tools_cli_config"] = "lua-aplicado/dsl/tools_cli_config.lua";
+         ["lua-aplicado.dsl.tree_walker_with_checker"] = "lua-aplicado/dsl/tree_walker_with_checker.lua";
+         ["lua-aplicado.error"] = "lua-aplicado/error.lua";
          ["lua-aplicado.expat"] = "lua-aplicado/expat.lua";
          ["lua-aplicado.filesystem"] = "lua-aplicado/filesystem.lua";
+         ["lua-aplicado.fork"] = "lua-aplicado/fork.lua";
+         ["lua-aplicado.http"] = "lua-aplicado/http.lua";
          ["lua-aplicado.lj2_chunk_inspector"] = "lua-aplicado/lj2_chunk_inspector.lua";
+         ["lua-aplicado.log"] = "lua-aplicado/log.lua";
          ["lua-aplicado.luajit2"] = "lua-aplicado/luajit2.lua";
          ["lua-aplicado.module"] = "lua-aplicado/module.lua";
          ["lua-aplicado.random"] = "lua-aplicado/random.lua";
@@ -50,6 +59,8 @@ build = {
          ["lua-aplicado.shell.remote"] = "lua-aplicado/shell/remote.lua";
          ["lua-aplicado.shell.remote_luarocks"] = "lua-aplicado/shell/remote_luarocks.lua";
          ["lua-aplicado.shell.send_email"] = "lua-aplicado/shell/send_email.lua";
+         ["lua-aplicado.testing.decorators"] = "lua-aplicado/testing/decorators.lua";
+         ["lua-aplicado.web.cookie_jar"] = "lua-aplicado/web/cookie_jar.lua";
       }
    }
 }

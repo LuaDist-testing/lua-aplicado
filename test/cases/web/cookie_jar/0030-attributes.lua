@@ -27,6 +27,9 @@ local make_cookie_jar,
 
 local test = (...)('attributes', exports)
 
+-- assume local timezone is GMT+04
+local GMT_OFFSET = 4
+
 -- HTTP parameters
 local DOMAIN = 'example.com'
 local HOST = 'foo.' .. DOMAIN .. ':8080'
@@ -57,7 +60,7 @@ test 'attributes' (function()
           value = '1',
           domain = HOST,
           path = '/',
-          expires = 1956528000
+          expires = 1956528000 - 3600 * GMT_OFFSET
         },
         {
           name = 'bar',

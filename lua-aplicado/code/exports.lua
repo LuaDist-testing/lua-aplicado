@@ -526,10 +526,6 @@ return
   {
     { "lua-aplicado/dsl/config_dsl.lua", w = 0 };
   };
-  walk_lom_data =
-  {
-    { "lua-aplicado/expat.lua", w = 0 };
-  };
   write_file =
   {
     { "lua-aplicado/filesystem.lua", w = 0 };
